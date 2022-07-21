@@ -1,5 +1,5 @@
 refresh_sounds = () => {
-	$.getJSON('/data', function(data) {
+	$.getJSON('data', function(data) {
 		$('.main').empty()
 		data.forEach(sound => {
 			$('.main').append(`
