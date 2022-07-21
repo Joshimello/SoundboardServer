@@ -3,6 +3,7 @@ const http = require('http')
 const fs = require('fs')
 const express = require('express')
 const chokidar = require('chokidar')
+const multer = require('multer')
 
 const app = express()
 const server = http.createServer(app)
@@ -27,6 +28,32 @@ watcher.on('add', path => {
 
 app.get('/data', (req, res) => {
     res.json(sounds); 
+})	
+
+const storage = multer.diskStorage({
+    destination: function(req, file, cb) {
+        cb(null, 'public/sounds/')
+    },
+  
+    filename: function(req, file, cb) {
+        cb(null, file.originalname)
+    }
+});
+
+const upload = multer({
+	storage: storage,
+
+	fileFilter: function (req, file, callback) {
+        var ext = path.extname(file.originalname);
+        if(ext !== '.mp3') {
+            return callback(new Error('only mp3 allowed'))
+        }
+        callback(null, true)
+    },
+})
+
+app.post('/upload', upload.array('files'), (req, res) => {
+    res.json({ message: 'Successfully uploaded files' })
 })
 
 const PORT = 3001 || process.env.PORT
