@@ -13,7 +13,6 @@ Check [Demo](https://joshimello.github.io/node-soundboard/)
 **Frontend**
 - Extreamly simple responsive design built using [Skeleton Framework](https://github.com/skeleton-framework/skeleton-framework).
 - [JQuery](https://github.com/jquery/jquery) to dynamically load content.
-- 
 
 **Backend**
 - [Node.js](https://github.com/nodejs/node) & [Express](https://github.com/expressjs/express) as base web framework.
@@ -42,8 +41,5 @@ Make sure you have [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs
 4. Optionally change the port or upload rules, app runs at [localhost:3001](localhost:3001) by default.
 
 ## Contribute
-Creating new issues, pull requests are always welcomed!
+Creating new issues, pull requests are always welcomed!  
 Of course reading this already makes me happy enough. x)
-
-## License
-Built under [MIT](http://www.opensource.org/licenses/mit-license.php) license.
