@@ -38,7 +38,7 @@ Make sure you have [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs
 	```
 	$ npm start
 	```
-4. Optionally change the port or upload rules, app runs at [localhost:3001](localhost:3001) by default.
+4. Optionally change the port or upload rules, app runs at [localhost:3001](http://localhost:3001) by default.
 
 ## Contribute
 Creating new issues, pull requests are always welcomed!  
