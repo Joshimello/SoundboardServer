@@ -1,2 +1,12 @@
 # node-soundboard
-little soundboard app requested by a friend hehe
+Soundboard with upload function
+
+## Used libraries
+### Frontend
+- JQuery
+- Skeleton Framework
+### Backend
+- NodeJS
+- Express
+- Chokidar
+- Multer
